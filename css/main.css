@@ -1303,7 +1303,7 @@ pre code {
 }
 .sidebar-inner {
   color: #999;
-  padding: 18px 10px;
+  padding: 15px 10px;
   text-align: center;
 }
 .site-overview-item:not(:first-child) {
@@ -2721,7 +2721,7 @@ hr {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #00c871;
+  background: #1f47a1;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
