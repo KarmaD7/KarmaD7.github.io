@@ -19,15 +19,15 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;karmad7.github.io&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Mist&quot;,&quot;version&quot;:&quot;8.5.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;always&quot;,&quot;padding&quot;:15,&quot;offset&quot;:12},&quot;copycode&quot;:false,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:false,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;}}</script><script src="/js/config.js"></script>
-<meta name="description" content="复习到八十多分的水平，考出来一百分。">
+<meta name="description" content="Part I Foundations of Data Systems  Chapter 2 Data Models and Query Languages  High Level Idea 每一层向上一层提供抽象： 应用特定数据 -&gt; JSON，XML等 -&gt; 数据库 -&gt; 磁盘等硬件  Relational Model Versus Document Model 应用友好性：">
 <meta property="og:type" content="article">
 <meta property="og:title" content="《Designing Data-Intensive Application》阅读笔记">
 <meta property="og:url" content="https://karmad7.github.io/2022/03/13/%E3%80%8ADesigning-Data-Intensive-Application%E3%80%8B%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/">
 <meta property="og:site_name" content="摸鱼小站">
-<meta property="og:description" content="复习到八十多分的水平，考出来一百分。">
+<meta property="og:description" content="Part I Foundations of Data Systems  Chapter 2 Data Models and Query Languages  High Level Idea 每一层向上一层提供抽象： 应用特定数据 -&gt; JSON，XML等 -&gt; 数据库 -&gt; 磁盘等硬件  Relational Model Versus Document Model 应用友好性：">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-03-12T16:11:56.000Z">
-<meta property="article:modified_time" content="2022-03-12T16:11:56.764Z">
+<meta property="article:modified_time" content="2022-03-13T13:10:59.048Z">
 <meta property="article:author" content="KarmaD7">
 <meta name="twitter:card" content="summary">
 
@@ -107,7 +107,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -120,6 +120,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#part-i-foundations-of-data-systems"><span class="nav-number">1.</span> <span class="nav-text"> Part I Foundations of Data Systems</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#chapter-2-data-models-and-query-languages"><span class="nav-number">1.1.</span> <span class="nav-text"> Chapter 2 Data Models and Query Languages</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#high-level-idea"><span class="nav-number">1.1.1.</span> <span class="nav-text"> High Level Idea</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#relational-model-versus-document-model"><span class="nav-number">1.1.2.</span> <span class="nav-text"> Relational Model Versus Document Model</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#query-language"><span class="nav-number">1.1.3.</span> <span class="nav-text"> Query Language</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#chapter-3-storage-and-retrieval"><span class="nav-number">1.2.</span> <span class="nav-text"> Chapter 3 Storage and Retrieval</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#chapter-4-encoding-and-evolution"><span class="nav-number">1.3.</span> <span class="nav-text"> Chapter 4 Encoding and Evolution</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#part-ii-distributed-data"><span class="nav-number">2.</span> <span class="nav-text"> Part II Distributed Data</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#chapter-5-replication"><span class="nav-number">2.1.</span> <span class="nav-text"> Chapter 5 Replication</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#chapter-6-partitioning"><span class="nav-number">2.2.</span> <span class="nav-text"> Chapter 6 Partitioning</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#chapter-7-transactions"><span class="nav-number">2.3.</span> <span class="nav-text"> Chapter 7 Transactions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#chapter-8-the-trouble-with-distributed-systems"><span class="nav-number">2.4.</span> <span class="nav-text"> Chapter 8 The Trouble with Distributed Systems</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#chapter-9-consistency-and-consensus"><span class="nav-number">2.5.</span> <span class="nav-text"> Chapter 9 Consistency and Consensus</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#part-iii-derived-data"><span class="nav-number">3.</span> <span class="nav-text"> Part III Derived Data</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#chapter-10-batch-processing"><span class="nav-number">3.1.</span> <span class="nav-text"> Chapter 10 Batch Processing</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#chapter-11-stream-processing"><span class="nav-number">3.2.</span> <span class="nav-text"> Chapter 11 Stream Processing</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#chapter-12-the-future-of-data-systems"><span class="nav-number">3.3.</span> <span class="nav-text"> Chapter 12 The Future of Data Systems</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -202,8 +203,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2022-03-13 00:11:56" itemprop="dateCreated datePublished" datetime="2022-03-13T00:11:56+08:00">2022-03-13</time>
+      <time title="创建时间：2022-03-13 00:11:56 / 修改时间：21:10:59" itemprop="dateCreated datePublished" datetime="2022-03-13T00:11:56+08:00">2022-03-13</time>
     </span>
 
   
@@ -216,7 +218,30 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        
+        <h1 id="part-i-foundations-of-data-systems"><a class="markdownIt-Anchor" href="#part-i-foundations-of-data-systems"></a> Part I Foundations of Data Systems</h1>
+<h2 id="chapter-2-data-models-and-query-languages"><a class="markdownIt-Anchor" href="#chapter-2-data-models-and-query-languages"></a> Chapter 2 Data Models and Query Languages</h2>
+<h3 id="high-level-idea"><a class="markdownIt-Anchor" href="#high-level-idea"></a> High Level Idea</h3>
+<p>每一层向上一层提供抽象：</p>
+<p>应用特定数据 -&gt; JSON，XML等 -&gt; 数据库 -&gt; 磁盘等硬件</p>
+<h3 id="relational-model-versus-document-model"><a class="markdownIt-Anchor" href="#relational-model-versus-document-model"></a> Relational Model Versus Document Model</h3>
+<p>应用友好性：取决于应用，一些认为关系模型的数据格式和 OOP mismatch；文档模型不适合 interconnect 程度高，many to many 很多的数据</p>
+<p>schema：关系模型更严格，文档模型更灵活</p>
+<p>局部性：文档模型局部性更好，需要获得一个实例的全部数据时效率更高</p>
+<p>二者正走向相互融合</p>
+<h3 id="query-language"><a class="markdownIt-Anchor" href="#query-language"></a> Query Language</h3>
+<h2 id="chapter-3-storage-and-retrieval"><a class="markdownIt-Anchor" href="#chapter-3-storage-and-retrieval"></a> Chapter 3 Storage and Retrieval</h2>
+<h2 id="chapter-4-encoding-and-evolution"><a class="markdownIt-Anchor" href="#chapter-4-encoding-and-evolution"></a> Chapter 4 Encoding and Evolution</h2>
+<h1 id="part-ii-distributed-data"><a class="markdownIt-Anchor" href="#part-ii-distributed-data"></a> Part II Distributed Data</h1>
+<h2 id="chapter-5-replication"><a class="markdownIt-Anchor" href="#chapter-5-replication"></a> Chapter 5 Replication</h2>
+<h2 id="chapter-6-partitioning"><a class="markdownIt-Anchor" href="#chapter-6-partitioning"></a> Chapter 6 Partitioning</h2>
+<h2 id="chapter-7-transactions"><a class="markdownIt-Anchor" href="#chapter-7-transactions"></a> Chapter 7 Transactions</h2>
+<h2 id="chapter-8-the-trouble-with-distributed-systems"><a class="markdownIt-Anchor" href="#chapter-8-the-trouble-with-distributed-systems"></a> Chapter 8 The Trouble with Distributed Systems</h2>
+<h2 id="chapter-9-consistency-and-consensus"><a class="markdownIt-Anchor" href="#chapter-9-consistency-and-consensus"></a> Chapter 9 Consistency and Consensus</h2>
+<h1 id="part-iii-derived-data"><a class="markdownIt-Anchor" href="#part-iii-derived-data"></a> Part III Derived Data</h1>
+<h2 id="chapter-10-batch-processing"><a class="markdownIt-Anchor" href="#chapter-10-batch-processing"></a> Chapter 10 Batch Processing</h2>
+<h2 id="chapter-11-stream-processing"><a class="markdownIt-Anchor" href="#chapter-11-stream-processing"></a> Chapter 11 Stream Processing</h2>
+<h2 id="chapter-12-the-future-of-data-systems"><a class="markdownIt-Anchor" href="#chapter-12-the-future-of-data-systems"></a> Chapter 12 The Future of Data Systems</h2>
+
     </div>
 
     
