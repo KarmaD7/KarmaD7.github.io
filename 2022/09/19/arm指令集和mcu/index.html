@@ -19,27 +19,27 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;karmad7.github.io&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Mist&quot;,&quot;version&quot;:&quot;8.5.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;always&quot;,&quot;padding&quot;:15,&quot;offset&quot;:12},&quot;copycode&quot;:false,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:false,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;}}</script><script src="/js/config.js"></script>
-<meta name="description" content="流水账式杂谈">
+<meta name="description" content="由于实验室工作的需要，学习一下arm指令集及一些基于arm的mcu。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="After Story: 2019-2023 in THU">
-<meta property="og:url" content="https://karmad7.github.io/2022/04/14/After-Story-2019-2023-in-THU/">
+<meta property="og:title" content="arm指令集和mcu">
+<meta property="og:url" content="https://karmad7.github.io/2022/09/19/arm%E6%8C%87%E4%BB%A4%E9%9B%86%E5%92%8Cmcu/">
 <meta property="og:site_name" content="摸鱼小站">
-<meta property="og:description" content="流水账式杂谈">
+<meta property="og:description" content="由于实验室工作的需要，学习一下arm指令集及一些基于arm的mcu。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-04-14T11:58:28.000Z">
-<meta property="article:modified_time" content="2022-04-15T16:46:03.874Z">
+<meta property="article:published_time" content="2022-09-19T13:16:57.000Z">
+<meta property="article:modified_time" content="2022-09-19T16:53:39.127Z">
 <meta property="article:author" content="KarmaD7">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://karmad7.github.io/2022/04/14/After-Story-2019-2023-in-THU/">
+<link rel="canonical" href="https://karmad7.github.io/2022/09/19/arm%E6%8C%87%E4%BB%A4%E9%9B%86%E5%92%8Cmcu/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;https:&#x2F;&#x2F;karmad7.github.io&#x2F;2022&#x2F;04&#x2F;14&#x2F;After-Story-2019-2023-in-THU&#x2F;&quot;,&quot;path&quot;:&quot;2022&#x2F;04&#x2F;14&#x2F;After-Story-2019-2023-in-THU&#x2F;&quot;,&quot;title&quot;:&quot;After Story: 2019-2023 in THU&quot;}</script>
+<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;https:&#x2F;&#x2F;karmad7.github.io&#x2F;2022&#x2F;09&#x2F;19&#x2F;arm%E6%8C%87%E4%BB%A4%E9%9B%86%E5%92%8Cmcu&#x2F;&quot;,&quot;path&quot;:&quot;2022&#x2F;09&#x2F;19&#x2F;arm指令集和mcu&#x2F;&quot;,&quot;title&quot;:&quot;arm指令集和mcu&quot;}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">&quot;&quot;</script>
-<title>After Story: 2019-2023 in THU | 摸鱼小站</title>
+<title>arm指令集和mcu | 摸鱼小站</title>
   
 
 
@@ -120,7 +120,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text"> 前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#201908-202001"><span class="nav-number">2.</span> <span class="nav-text"> 201908-202001</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#202002-202007"><span class="nav-number">3.</span> <span class="nav-text"> 202002-202007</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#202008-202101"><span class="nav-number">4.</span> <span class="nav-text"> 202008-202101</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#202102-202107"><span class="nav-number">5.</span> <span class="nav-text"> 202102-202107</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#202108-202201"><span class="nav-number">6.</span> <span class="nav-text"> 202108-202201</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#202202-"><span class="nav-number">7.</span> <span class="nav-text"> 202202-</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#arm"><span class="nav-number">1.</span> <span class="nav-text"> ARM</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%B9%E6%9D%83%E7%BA%A7"><span class="nav-number">1.1.</span> <span class="nav-text"> 特权级</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%AF%84%E5%AD%98%E5%99%A8"><span class="nav-number">1.2.</span> <span class="nav-text"> 数据类型和寄存器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#mcu%E4%BB%A5stm32f407vgt6%E4%B8%BA%E4%BE%8B"><span class="nav-number">2.</span> <span class="nav-text"> MCU：以STM32F407VGT6为例</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -180,7 +180,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://karmad7.github.io/2022/04/14/After-Story-2019-2023-in-THU/">
+    <link itemprop="mainEntityOfPage" href="https://karmad7.github.io/2022/09/19/arm%E6%8C%87%E4%BB%A4%E9%9B%86%E5%92%8Cmcu/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/pikachu.jpeg">
@@ -193,7 +193,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          After Story: 2019-2023 in THU
+          arm指令集和mcu
         </h1>
 
         <div class="post-meta-container">
@@ -204,20 +204,20 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2022-04-14 19:58:28" itemprop="dateCreated datePublished" datetime="2022-04-14T19:58:28+08:00">2022-04-14</time>
+      <time title="创建时间：2022-09-19 21:16:57" itemprop="dateCreated datePublished" datetime="2022-09-19T21:16:57+08:00">2022-09-19</time>
     </span>
       <span class="post-meta-item">
         <span class="post-meta-item-icon">
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2022-04-16 00:46:03" itemprop="dateModified" datetime="2022-04-16T00:46:03+08:00">2022-04-16</time>
+        <time title="修改时间：2022-09-20 00:53:39" itemprop="dateModified" datetime="2022-09-20T00:53:39+08:00">2022-09-20</time>
       </span>
 
   
 </div>
 
-            <div class="post-description">流水账式杂谈</div>
+            <div class="post-description">由于实验室工作的需要，学习一下arm指令集及一些基于arm的mcu。</div>
         </div>
       </header>
 
@@ -225,49 +225,35 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
-<p>我，KarmaD，2019级计算机系本科生，现在读大三，这是一个巨坑，用以记录我过去（2019年8月14日起）、现在和未来（预计至2023年6月止）的本科生活，可以说是碎碎念，也可以说是流水账。由于还有学业以及科研等方面的压力，可能需要很长时间才能完成。</p>
-<p>推动我开坑的契机有三。其一是酒井资讯最近发的一些八字班回忆推送，尽管我离毕业还有一年多的时间，但这些推送同样引起了我的共鸣。其二是手机存储空间将满，我吸取了多次“因各种原因更换手机导致数据丢失”的失误，决定将有价值的照片存到云上，恰好可以一并用文字的形式将这些记忆保存下来。其三是最近做的一些奇怪的梦，它们带我回忆了一些更久远的过去，包括人生前十八年的诸多快乐时光，以及4号线由中关村开往北京大学东门时的场景。但当我醒来时，才发现更多的细节早已记不清了。如果有文字形式的记录，就能把这些记忆以0和1的形式固化。</p>
-<p>如果推研顺利且我能正常毕业，我将在2028年夏天起不再是THU的学生。但如果出现退学、推研失败或没法毕业（本科或研究生）等情况，我将在从现在到2031年中的某一年起不再是THU的学生。但无论是哪种情况，到时可能都没有闲情逸致再去记录了，也可能在「磨损」下已经忘却。因此，现在开始为好。</p>
-<p>今天是2022年4月14日，春意盎然，我写下了这段文字。我喜欢THU的春天，有很多花。当然，我也对我有一个不花粉过敏的身体表示感谢。</p>
-<h2 id="201908-202001"><a class="markdownIt-Anchor" href="#201908-202001"></a> 201908-202001</h2>
-<blockquote>
-<p>陌生的房子 陌生的地址</p>
-<p>收留了疲惫的人 和他的心事</p>
-<p>出走和归来 总一个样子</p>
-<p>留在这里 不与人知</p>
-</blockquote>
-<p>2019年8月13号早上，我和父母乘客车前往哈尔滨。中午时间很紧，买了黄焖鸡米饭，带到车站吃。开往北京的高铁车次是 G394，记得车上很热，我百无聊赖，读起了《万古江河》，还发了条说说，不过也没读下去几页。晚上八点多到了北京南站，通过某种方式（我已经忘了）到了海淀黄庄附近的巴比伦宾馆，安顿下来。这是我高中毕业以来第三次来北京，不过想到这次来要很久之后才能回去，再想到前两次来时发生的一些事情，心里还是有些波澜。整理好行装已接近十一点了，我便上床睡去，准备第二天去学校报到。</p>
-<h2 id="202002-202007"><a class="markdownIt-Anchor" href="#202002-202007"></a> 202002-202007</h2>
-<blockquote>
-<p>同泽已故逆行处 难斩却心头恨无助</p>
-<p>呼风饮露劫难度 滚滚长江踏万里路</p>
-<p>戎马一生 保家卫国 千秋万代 每个惊蛰</p>
-<p>横刀立马 驰骋疆场 妄想触碰山河</p>
-</blockquote>
-<h2 id="202008-202101"><a class="markdownIt-Anchor" href="#202008-202101"></a> 202008-202101</h2>
-<blockquote>
-<p>河北师大附中 乒乓少年背向我</p>
-<p>沉默地注视 无法离开的教室</p>
-<p>生活在经验里 直到大厦崩塌</p>
-<p>一万匹脱缰的马 在他脑海中奔跑</p>
-</blockquote>
-<h2 id="202102-202107"><a class="markdownIt-Anchor" href="#202102-202107"></a> 202102-202107</h2>
-<blockquote>
-<p>命运多舛 痴迷淡然</p>
-<p>挥别了青春 数不尽的车站</p>
-<p>甘于平凡却不甘 平凡地溃败</p>
-<p>你是阿刁</p>
-<p>你是自由的鸟</p>
-</blockquote>
-<h2 id="202108-202201"><a class="markdownIt-Anchor" href="#202108-202201"></a> 202108-202201</h2>
-<blockquote>
-<p>来不及 来不及 你曾笑着哭泣</p>
-<p>来不及 来不及 也要唱给你听</p>
-<p>春日雨 夏蝉鸣 明天是个好天气</p>
-<p>秋风起 雪花轻 海底看不见四季</p>
-</blockquote>
-<h2 id="202202-"><a class="markdownIt-Anchor" href="#202202-"></a> 202202-</h2>
+        <h2 id="arm"><a class="markdownIt-Anchor" href="#arm"></a> ARM</h2>
+<p>RISC 中的 CISC。由于 XiuOS 主要支持 Cortex-M 系列处理器，这里的内容基于 ARMv7-M。</p>
+<h3 id="特权级"><a class="markdownIt-Anchor" href="#特权级"></a> 特权级</h3>
+<p>Thread Mode 和 Handler Mode。对应于非特权模式和特权模式。</p>
+<h3 id="数据类型和寄存器"><a class="markdownIt-Anchor" href="#数据类型和寄存器"></a> 数据类型和寄存器</h3>
+<p>和许多指令集类似，有字节、字、半字。</p>
+<p>13个通用寄存器 + SP + LR + PC。</p>
+<p>PC 寄存器：TODO</p>
+<p>和 x86 类似，会存储进位信息。有 N，Z，C，V，Q。</p>
+<h2 id="mcu以stm32f407vgt6为例"><a class="markdownIt-Anchor" href="#mcu以stm32f407vgt6为例"></a> MCU：以STM32F407VGT6为例</h2>
+<p>STM32F407VGT6是意法半导体基于高性能的Arm Cortex®-M4 32位RISC内核设计的一款微处理器，其工作频率高达 168 MHz。Cortex-M4 内核具有浮点运算单元（FPU），支持所有ARM单精度数据处理指令和数据类型。 它还实现了全套的DSP指令和一个存储器保护单元（MPU），从而增强了应用程序的安全性。 STM32F407VGT6集成了高速嵌入式存储器，其中包括高达 1 MB的FLASH，高达 192 KB的SRAM。</p>
+<p>芯片的其他特性如下：</p>
+<ul>
+<li>芯片提供三个12位ADC模数转换器，转换速度最高可达2.4Mhz，两个DAC数模转换器，一个低功耗亚秒级精度的RTC，十二个通用16位定时器，其中包括两个用于电机控制的PWM定时器，两个通用32位定时器。 真正的随机数生成器（RNG）。 它们还具有标准和高级通信接口。</li>
+<li>STM32F407提供了工作频率为168 MHz的Cortex™-M4内核（具有浮点单元）的性能，在168 MHz频率下，从Flash存储器执行时，芯片能够提供210 DMIPS/566 CoreMark性能，并且利用意法半导体的ART加速器实现了FLASH零等待状态。DSP指令和浮点单元扩大了产品的应用范围。芯片本身具有功率调节功能，功耗低至238 µA/MHz的电流消耗（@ 168 MHz）。</li>
+<li>灵活的静态存储器控制器，支持紧凑型闪存，SRAM，PSRAM，NOR和NAND存储器，用于扩展SRAM和FLASH。</li>
+<li>LCD并行接口，支持8080/6800模式。</li>
+<li>CPU支持睡眠，停止和待机等运行模式。</li>
+<li>芯片拥有2个DMA控制器，共有16个数据流，具有FIFO和突发传输功能。</li>
+<li>芯片支持串行线调试（SWD）和JTAG接口，Cortex-M4嵌入式跟踪Macrocell™。</li>
+<li>具有3个I2C接口（SMBus / PMBus），2个bxCAN控制器，4个USARTs / 2 UART， 3个SPI（42 Mbits / s），其中2个具有复用的全双工I2S，可通过内部音频PLL或外部时钟实现音频类精度。</li>
+<li>SDIO接口：STM32F407VGT6 的SDIO 控制器支持多媒体卡（MMC 卡）、 SD 存储卡、 SD I/O 卡和 CE-ATA 设备等。</li>
+<li>STM32F407 芯片自带10M/100M以太网MAC控制器，该模块支持介质独立接口 MII 和简化介质独立接口 RMII，并自带了一个用于外部 PHY 通信的 SMI 接口， 通过一组配置寄存器，用户可以为 MAC 控制器和 DMA 控制器选择所需模式和功能。</li>
+<li>STM32F407芯片自带的USB控制器支持USB2.0 通信协议，可以满足USB OTG FS 和 USB OTG HS通信（HS 需要外扩高速 PHY 芯片实现，速度可达 480Mbps），支持 USB Host 和 USB Device。<br />
+8至14位并行摄像头接口（DCMI），传输速度高达54 Mbytes / s。</li>
+<li>高达512字节的OTP存储器。</li>
+<li>拥有全球唯一96位ID标识码。</li>
+</ul>
+<p>（直接复制自 <a target="_blank" rel="noopener" href="http://xuos.io/doc/hardware/processor/arm.html%EF%BC%89">http://xuos.io/doc/hardware/processor/arm.html）</a></p>
 
     </div>
 
@@ -281,14 +267,11 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2022/03/13/%E3%80%8AThe-Art-of-Multiprocessor-Programming%E3%80%8B%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/" rel="prev" title="《The Art of Multiprocessor Programming》阅读笔记">
-                  <i class="fa fa-chevron-left"></i> 《The Art of Multiprocessor Programming》阅读笔记
+                <a href="/2022/09/17/%E9%BE%99%E8%8A%AF%E6%9D%AF%E5%9B%9E%E9%A1%BE/" rel="prev" title="龙芯杯回顾">
+                  <i class="fa fa-chevron-left"></i> 龙芯杯回顾
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2022/09/17/jyy%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AF%BE%E7%AC%94%E8%AE%B0/" rel="next" title="jyy操作系统课笔记">
-                  jyy操作系统课笔记 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
@@ -345,7 +328,7 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
 
-<script class="next-config" data-name="gitalk" type="application/json">{&quot;enable&quot;:true,&quot;github_id&quot;:&quot;KarmaD7&quot;,&quot;repo&quot;:&quot;blog-comments&quot;,&quot;client_id&quot;:&quot;37e6162573c97fabd883&quot;,&quot;client_secret&quot;:&quot;a7d8854dcf3f6f6cf9b564a99ffb2aca1f9d252c&quot;,&quot;admin_user&quot;:&quot;KarmaD7&quot;,&quot;distraction_free_mode&quot;:true,&quot;proxy&quot;:&quot;https:&#x2F;&#x2F;cors-anywhere.azm.workers.dev&#x2F;https:&#x2F;&#x2F;github.com&#x2F;login&#x2F;oauth&#x2F;access_token&quot;,&quot;language&quot;:&quot;zh-CN&quot;,&quot;js&quot;:{&quot;url&quot;:&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;gitalk@1.7.2&#x2F;dist&#x2F;gitalk.min.js&quot;,&quot;integrity&quot;:&quot;sha256-Pmj85ojLaPOWwRtlMJwmezB&#x2F;Qg8BzvJp5eTzvXaYAfA&#x3D;&quot;},&quot;path_md5&quot;:&quot;3abd95bc47e23bfa8ae67e5418148f1e&quot;}</script>
+<script class="next-config" data-name="gitalk" type="application/json">{&quot;enable&quot;:true,&quot;github_id&quot;:&quot;KarmaD7&quot;,&quot;repo&quot;:&quot;blog-comments&quot;,&quot;client_id&quot;:&quot;37e6162573c97fabd883&quot;,&quot;client_secret&quot;:&quot;a7d8854dcf3f6f6cf9b564a99ffb2aca1f9d252c&quot;,&quot;admin_user&quot;:&quot;KarmaD7&quot;,&quot;distraction_free_mode&quot;:true,&quot;proxy&quot;:&quot;https:&#x2F;&#x2F;cors-anywhere.azm.workers.dev&#x2F;https:&#x2F;&#x2F;github.com&#x2F;login&#x2F;oauth&#x2F;access_token&quot;,&quot;language&quot;:&quot;zh-CN&quot;,&quot;js&quot;:{&quot;url&quot;:&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;gitalk@1.7.2&#x2F;dist&#x2F;gitalk.min.js&quot;,&quot;integrity&quot;:&quot;sha256-Pmj85ojLaPOWwRtlMJwmezB&#x2F;Qg8BzvJp5eTzvXaYAfA&#x3D;&quot;},&quot;path_md5&quot;:&quot;220bbc11532ca199eb318d93bab1ef10&quot;}</script>
 <script src="/js/third-party/comments/gitalk.js"></script>
 
 </body>
